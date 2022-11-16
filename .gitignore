@@ -351,3 +351,13 @@ MigrationBackup/
 
 # CMake build dir
 build/
+build2/
+matrix.xcodeproj/
+cmake_install.cmake
+DartConfiguration.tcl
+CTestTestfile.cmake
+CMakeScripts/
+CMakeFiles/
+CMakeCache.txt
+*.DS_Store
+._*
