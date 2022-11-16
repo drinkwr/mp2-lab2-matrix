@@ -1,0 +1,13 @@
+/Users/tas/mp2-lab2-matrix/CMakeFiles/Experimental.dir
+/Users/tas/mp2-lab2-matrix/CMakeFiles/Nightly.dir
+/Users/tas/mp2-lab2-matrix/CMakeFiles/Continuous.dir
+/Users/tas/mp2-lab2-matrix/CMakeFiles/NightlyMemoryCheck.dir
+/Users/tas/mp2-lab2-matrix/CMakeFiles/RUN_TESTS.dir
+/Users/tas/mp2-lab2-matrix/CMakeFiles/ALL_BUILD.dir
+/Users/tas/mp2-lab2-matrix/CMakeFiles/ZERO_CHECK.dir
+/Users/tas/mp2-lab2-matrix/include/CMakeFiles/matrix.dir
+/Users/tas/mp2-lab2-matrix/include/CMakeFiles/RUN_TESTS.dir
+/Users/tas/mp2-lab2-matrix/gtest/CMakeFiles/gtest.dir
+/Users/tas/mp2-lab2-matrix/gtest/CMakeFiles/RUN_TESTS.dir
+/Users/tas/mp2-lab2-matrix/test/CMakeFiles/test_matrix.dir
+/Users/tas/mp2-lab2-matrix/test/CMakeFiles/RUN_TESTS.dir

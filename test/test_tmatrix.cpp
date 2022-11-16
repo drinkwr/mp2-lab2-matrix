@@ -56,14 +56,14 @@ TEST(TDynamicMatrix, can_set_and_get_element)
 
 TEST(TDynamicMatrix, throws_when_set_element_with_negative_index)
 {
-    TDynamicMatrix<int> m(10);
-    ASSERT_ANY_THROW (m[-1][-1] = 0);
+    TDynamicMatrix<int> m(2);
+    ASSERT_ANY_THROW(m.at(-2).at(-1) = 0);  //m[-1][-1] = 0);
 }
 
 TEST(TDynamicMatrix, throws_when_set_element_with_too_large_index)
 {
     TDynamicMatrix<int> m(10);
-    ASSERT_ANY_THROW (m[100][100] = 1);
+    ASSERT_ANY_THROW(m.at(100).at(100) = 0);   //m[100][100] = 1);
 }
 
 TEST(TDynamicMatrix, can_assign_matrix_to_itself)
@@ -123,11 +123,18 @@ TEST(TDynamicMatrix, matrices_with_different_size_are_not_equal)
 
 TEST(TDynamicMatrix, can_add_matrices_with_equal_size)
 {
-    TDynamicMatrix<int> m(10);
+    /*TDynamicMatrix<int> m1(2),m2(2),m3;
+         m1[0][0] = 6;
+         m2[0][0] = 4;
+         m3 = m1 + m2;
+         EXPECT_EQ(10, m3[0][0]);*/
+    TDynamicMatrix<int> m(2);
     m[0][0] = 1;
-    TDynamicMatrix<int> m1(10);
-    m1[0][0] = 1;
-    ASSERT_NO_THROW(m + m1);
+    TDynamicMatrix<int> m1(2);
+    m1[0][0] = 2;
+    TDynamicMatrix<int> m2(2);
+    m2 = m + m1;
+    ASSERT_EQ(true, m2[0][0] == 3);
 }
 
 TEST(TDynamicMatrix, cant_add_matrices_with_not_equal_size)
@@ -141,11 +148,13 @@ TEST(TDynamicMatrix, cant_add_matrices_with_not_equal_size)
 
 TEST(TDynamicMatrix, can_subtract_matrices_with_equal_size)
 {
-    TDynamicMatrix<int> m(10);
+    TDynamicMatrix<int> m(2);
     m[0][0] = 1;
-    TDynamicMatrix<int> m1(10);
+    TDynamicMatrix<int> m1(2);
     m1[0][0] = 1;
-    ASSERT_NO_THROW(m - m1);
+    TDynamicMatrix<int> m2(2);
+    m2 = m - m1;
+    ASSERT_EQ(true, m2[0][0] == 0 );
 }
 
 TEST(TDynamicMatrix, cant_subtract_matrixes_with_not_equal_size)

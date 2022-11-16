@@ -23,12 +23,13 @@ protected:
   size_t sz;
   T* pMem;
 public:
-  TDynamicVector(size_t size = 1) : sz(size)
+  TDynamicVector(size_t size = 10) : sz(size)
   {
     if (sz == 0)
       throw out_of_range("Vector size should be greater than zero");
     if (sz > MAX_VECTOR_SIZE)
       throw out_of_range("Vector size should be less than max_vector_size");
+      //cout << size <<"\n";
     pMem = new T[sz]();// {}; // У типа T д.б. констуктор по умолчанию
   }
   TDynamicVector(T* arr, size_t s) : sz(s)
@@ -43,20 +44,23 @@ public:
       pMem = new T[sz];
       std::copy(v.pMem, v.pMem + sz, pMem);
   }
-  TDynamicVector(TDynamicVector&& v) //noexcept
+  TDynamicVector(TDynamicVector&& v) // noexcept
   {
-      sz = v.sz;
-      pMem = new T[sz];
-      std::copy(v.pMem, v.pMem + sz, pMem);
+      //sz = v.sz;
+      //pMem = v.pMem;
+      //v.pMem = 0;
+      this->sz = v.sz;
+      this->pMem = v.pMem;
+      v.pMem = nullptr;
+      v.sz = 0;
   }
-  ~TDynamicVector()
-  {/*
-      if(pMem != 0)
-      {
-          delete []pMem;
-      }
-       */
-  }
+    ~TDynamicVector()
+    {
+        if(pMem != 0)
+        {
+            delete []pMem;
+        }
+    }
   TDynamicVector& operator=(const TDynamicVector& v)
   {
       if (this == &v) return *this;
@@ -71,12 +75,14 @@ public:
   TDynamicVector& operator=(TDynamicVector&& v) //noexcept
   {
       if (this == &v) return *this;
-      
-      delete[] this->pMem;
-      this->sz = v.sz;
-      this->pMem = new T[sz];
-      for (int i = 0; i < sz; i++)
-          pMem[i] = v.pMem[i];
+      //pMem = v.pMem;
+      //v.pMem = 0;
+      //return *this;
+      delete[] pMem;
+      pMem = v.pMem;
+      sz = v.sz;
+      v.sz = 0;
+      v.pMem = nullptr;
       return *this;
   }
 
@@ -86,11 +92,13 @@ public:
   // индексация
   T& operator[](size_t ind)
   {
-      return at(ind);
+      return pMem[ind];
+      //return at(ind);
   }
   const T& operator[](size_t ind) const
   {
-      return at(ind);
+      return pMem[ind];
+      //return at(ind);
   }
   // индексация с контролем
   T& at(size_t ind)
@@ -213,14 +221,19 @@ public:
         throw out_of_range("MAtrix size should be greater than zero");
       if (sz > MAX_MATRIX_SIZE)
         throw out_of_range("Matrix size should be less than max_vector_size");
-    for (size_t i = 0; i < sz; i++)
-      pMem[i] = TDynamicVector<T>(sz);
+    for (size_t i = 0; i < s; i++)
+      pMem[i] = TDynamicVector<T>(s);
   }
 
     size_t size() const //noexcept
       { return sz; }
-  
-  using TDynamicVector<TDynamicVector<T> >::operator[];
+   
+    TDynamicMatrix(const TDynamicVector<TDynamicVector<T> >& v) : TDynamicVector<TDynamicVector<T> >(v){};//new
+    using TDynamicVector<TDynamicVector<T> >::at;//new
+
+    
+    
+    using TDynamicVector<TDynamicVector<T> >::operator[];
 
   // сравнение
   bool operator==(const TDynamicMatrix& m) const //noexcept
@@ -233,15 +246,17 @@ public:
       return true;
   }
     
-    TDynamicMatrix& operator=(const TDynamicMatrix& m)
+    /*TDynamicMatrix& operator=(const TDynamicMatrix& m)
     {
         if (this == &m) return *this;
+        
+        delete[] this->pMem;
         this->sz = m.sz;
-        pMem = m.pMem;
+        this->pMem = new R[sz]();
         for (int i = 0; i < sz; i++)
             pMem[i] = m.pMem[i];
         return *this;
-    }
+    }*/
     
   // матрично-скалярные операции
   TDynamicMatrix<T> operator*(const T& val)
@@ -265,7 +280,7 @@ public:
               {
                   sum += pMem[i][j] * v[j];
               }
-              result[i] = sum;
+              result[i] = sum;//Mem[i] * v;
           }
       return result;
   }
@@ -273,12 +288,18 @@ public:
   // матрично-матричные операции
   TDynamicMatrix operator+(const TDynamicMatrix& m)
   {
-      if (m.sz != this->sz) throw "Incorrect matrix size";
+      /*if (m.sz != this->sz) throw "Incorrect matrix size";
 
       TDynamicMatrix res(sz);
       for (int i = 0; i < sz; i++)
           res.pMem[i] = pMem[i] + pMem[i];
-      return res;
+      return res;*/
+      
+             if (size() != m.size())
+                 throw "exeption";
+             return TDynamicVector<TDynamicVector<T> >::operator+(TDynamicVector<TDynamicVector<T> >(m));
+
+         
   }
   TDynamicMatrix operator-(const TDynamicMatrix& m)
   {

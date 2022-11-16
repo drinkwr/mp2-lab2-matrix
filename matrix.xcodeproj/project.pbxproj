@@ -1,0 +1,2015 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		215990BC657F4339824DD8B9 /* Experimental */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = DDB2FDB5D44F44F8A648B84F /* Build configuration list for PBXAggregateTarget "Experimental" */;
+			buildPhases = (
+				370CA5CAF9116505B4801EE6 /* Generate CMakeFiles/Experimental */,
+			);
+			dependencies = (
+				BD0204F69065471BB4030E52 /* PBXTargetDependency */,
+			);
+			name = Experimental;
+			productName = Experimental;
+		};
+		4000705F3BFE401AA1D5A61C /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = CF6A89428EF8442F9D215B2B /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				4C97A8A51034B6378B0F2B6A /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		50AB1BC4E5A247A9BCE24975 /* NightlyMemoryCheck */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FC981145E5894E639A3AF440 /* Build configuration list for PBXAggregateTarget "NightlyMemoryCheck" */;
+			buildPhases = (
+				75176924E516641CAA9DAD2C /* Generate CMakeFiles/NightlyMemoryCheck */,
+			);
+			dependencies = (
+				0D462810748C46AFB57293EA /* PBXTargetDependency */,
+			);
+			name = NightlyMemoryCheck;
+			productName = NightlyMemoryCheck;
+		};
+		79B4268ADF5F4C7481CE7878 /* matrix */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = CFF678853E5B4C39B590FF67 /* Build configuration list for PBXAggregateTarget "matrix" */;
+			buildPhases = (
+			);
+			dependencies = (
+				E7D00266D12D4F2E8DCBFEA2 /* PBXTargetDependency */,
+			);
+			name = matrix;
+			productName = matrix;
+		};
+		97200F2A105943C49A94E634 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A66FEBF4901848488B711CE1 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				01EDF9380A91983C9430F544 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				911F4E39115F4E72BFACDFE6 /* PBXTargetDependency */,
+				AF954FEDE3F2481F8A620CB3 /* PBXTargetDependency */,
+				726F274BB8704B8D9EB68C62 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		9791E9B80B7B4D568B6F2D1A /* RUN_TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 543A49C3864446448577C87D /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildPhases = (
+				003C8D08B0008F35F218E126 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+			);
+			name = RUN_TESTS;
+			productName = RUN_TESTS;
+		};
+		B75FF8EF60FE4FBC87043BF2 /* Nightly */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = AE2E19879FE742E1A3787FE2 /* Build configuration list for PBXAggregateTarget "Nightly" */;
+			buildPhases = (
+				240841D94DE3D724270B45AA /* Generate CMakeFiles/Nightly */,
+			);
+			dependencies = (
+				372B792F6F9D454A8F6F10D7 /* PBXTargetDependency */,
+			);
+			name = Nightly;
+			productName = Nightly;
+		};
+		F7E7BB6799E14883B0CD70FD /* Continuous */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4E4D284C815A4A64A079550A /* Build configuration list for PBXAggregateTarget "Continuous" */;
+			buildPhases = (
+				64148057044CCC376F0F0B97 /* Generate CMakeFiles/Continuous */,
+			);
+			dependencies = (
+				75C23940CEA049538ACF36A3 /* PBXTargetDependency */,
+			);
+			name = Continuous;
+			productName = Continuous;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		1CC3DB2AC181434EB404188C /* /Users/tas/mp2-lab2-matrix/gtest/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = F21066B7546249679C41700C /* /Users/tas/mp2-lab2-matrix/gtest/CMakeLists.txt */; };
+		3AA5D69F97CC46F586701AC2 /* /Users/tas/mp2-lab2-matrix/test/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 0FFFB59ED5C242468C1045B9 /* /Users/tas/mp2-lab2-matrix/test/CMakeLists.txt */; };
+		4AB1AB102EDC41F0B9F6EE10 /* /Users/tas/mp2-lab2-matrix/test/test_tmatrix.cpp */ = {isa = PBXBuildFile; fileRef = B148624A66574C75A43E96ED /* /Users/tas/mp2-lab2-matrix/test/test_tmatrix.cpp */; };
+		6A86B0656963495EA170F0C6 /* /Users/tas/mp2-lab2-matrix/test/test_tvector.cpp */ = {isa = PBXBuildFile; fileRef = 3F946AA0F20F419487E73F9C /* /Users/tas/mp2-lab2-matrix/test/test_tvector.cpp */; };
+		74127F5A599D4F5D8464711C /* /Users/tas/mp2-lab2-matrix/test/test_main.cpp */ = {isa = PBXBuildFile; fileRef = A464A1D6F9EF4DF791D34B60 /* /Users/tas/mp2-lab2-matrix/test/test_main.cpp */; };
+		9361414A7A9E490A9D8CFE20 /* /Users/tas/mp2-lab2-matrix/gtest/gtest-all.cc */ = {isa = PBXBuildFile; fileRef = 6B3C55C368AD468B853DBD59 /* /Users/tas/mp2-lab2-matrix/gtest/gtest-all.cc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		303536682D16414AB341D97B /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		BC1B16016B674C00A1513E62 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		DF943E724F7840E6885F094A /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		F7CE4AB8E71C47DA88FD079C /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		1BFDAD1DAC7D4E2C93C474D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F56B01BF79F4E6C95DCB4C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4000705F3BFE401AA1D5A61C;
+			remoteInfo = ZERO_CHECK;
+		};
+		2633FE7F6C4A435A93DD834A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F56B01BF79F4E6C95DCB4C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AEA391D5EF0F44E8BB72B7D5;
+			remoteInfo = gtest;
+		};
+		662BF32979C7478E9A0A5D0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F56B01BF79F4E6C95DCB4C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4000705F3BFE401AA1D5A61C;
+			remoteInfo = ZERO_CHECK;
+		};
+		734D31A0F37146B8BB4E5E0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F56B01BF79F4E6C95DCB4C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AEA391D5EF0F44E8BB72B7D5;
+			remoteInfo = gtest;
+		};
+		932253CF2CEE4158BD72A260 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F56B01BF79F4E6C95DCB4C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4000705F3BFE401AA1D5A61C;
+			remoteInfo = ZERO_CHECK;
+		};
+		A17223A1CC5D4D519CD01D0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F56B01BF79F4E6C95DCB4C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4000705F3BFE401AA1D5A61C;
+			remoteInfo = ZERO_CHECK;
+		};
+		A67F53B9669E4D43B319312B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F56B01BF79F4E6C95DCB4C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4000705F3BFE401AA1D5A61C;
+			remoteInfo = ZERO_CHECK;
+		};
+		C2DC3D5C695F4F109FE93FE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F56B01BF79F4E6C95DCB4C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D100B575D9E42648633C25B;
+			remoteInfo = test_matrix;
+		};
+		D0F1EB6B473F44FC9FF613CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F56B01BF79F4E6C95DCB4C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4000705F3BFE401AA1D5A61C;
+			remoteInfo = ZERO_CHECK;
+		};
+		E2072FA165D0439F895D3717 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F56B01BF79F4E6C95DCB4C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4000705F3BFE401AA1D5A61C;
+			remoteInfo = ZERO_CHECK;
+		};
+		EAA45898F5F948ADAA68BFC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F56B01BF79F4E6C95DCB4C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4000705F3BFE401AA1D5A61C;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0FFFB59ED5C242468C1045B9 /* /Users/tas/mp2-lab2-matrix/test/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = test/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		108D5E340204445183AEC6AA /* /Users/tas/mp2-lab2-matrix/include/tmatrix.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tmatrix.h; path = include/tmatrix.h; sourceTree = SOURCE_ROOT; };
+		294D9A8C75994B70AA0AE1BD /* /Users/tas/mp2-lab2-matrix/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		3F946AA0F20F419487E73F9C /* /Users/tas/mp2-lab2-matrix/test/test_tvector.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_tvector.cpp; path = test/test_tvector.cpp; sourceTree = SOURCE_ROOT; };
+		4E4C46EC08D341A4BC453170 /* test_matrix */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = test_matrix; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B91F0D025E54399BF73404D /* /Users/tas/mp2-lab2-matrix/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		6B3C55C368AD468B853DBD59 /* /Users/tas/mp2-lab2-matrix/gtest/gtest-all.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "gtest-all.cc"; path = "gtest/gtest-all.cc"; sourceTree = SOURCE_ROOT; };
+		762C91104AA64AFA85E01344 /* /Users/tas/mp2-lab2-matrix/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		93F11DBAD1014CF1913D5C34 /* /Users/tas/mp2-lab2-matrix/include/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = include/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		A464A1D6F9EF4DF791D34B60 /* /Users/tas/mp2-lab2-matrix/test/test_main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_main.cpp; path = test/test_main.cpp; sourceTree = SOURCE_ROOT; };
+		A4F803CC2B24496990B7FFE6 /* gtest */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libgtest.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B148624A66574C75A43E96ED /* /Users/tas/mp2-lab2-matrix/test/test_tmatrix.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_tmatrix.cpp; path = test/test_tmatrix.cpp; sourceTree = SOURCE_ROOT; };
+		BA1BF90F7E3A4177A6977BC3 /* /Users/tas/mp2-lab2-matrix/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		CE12581C5ECE4A2D9FA2038F /* /Users/tas/mp2-lab2-matrix/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		F21066B7546249679C41700C /* /Users/tas/mp2-lab2-matrix/gtest/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = gtest/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1197B50C10B14F43B5D4DC42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF28CCCCF4E0474887FB80CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0579EE2ABADC4DA28A824717 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4F803CC2B24496990B7FFE6 /* gtest */,
+				4E4C46EC08D341A4BC453170 /* test_matrix */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26589E4DB2D7488C9494CD1F /* matrix */ = {
+			isa = PBXGroup;
+			children = (
+				6007735DC13145C9946B6809 /* Header Files */,
+				93F11DBAD1014CF1913D5C34 /* /Users/tas/mp2-lab2-matrix/include/CMakeLists.txt */,
+			);
+			name = matrix;
+			sourceTree = "<group>";
+		};
+		334C2AF193404B0789FD379D /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		3C49DC5B37044287BF51D11F /* Experimental */ = {
+			isa = PBXGroup;
+			children = (
+				77EF455C00AC4F8DAE0FD6DF /* CMake Rules */,
+				CE12581C5ECE4A2D9FA2038F /* /Users/tas/mp2-lab2-matrix/CMakeLists.txt */,
+			);
+			name = Experimental;
+			sourceTree = "<group>";
+		};
+		6007735DC13145C9946B6809 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				108D5E340204445183AEC6AA /* /Users/tas/mp2-lab2-matrix/include/tmatrix.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		647DEA8F25694A3EB7E8DC67 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				7A629DAC383F47F39F3079B8 /* CMake Rules */,
+				BA1BF90F7E3A4177A6977BC3 /* /Users/tas/mp2-lab2-matrix/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		686D22345D954C0E92B5D14D /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		6C861461D79E41199D19C2A5 /* Continuous */ = {
+			isa = PBXGroup;
+			children = (
+				C9903D932B284711A5A99632 /* CMake Rules */,
+				294D9A8C75994B70AA0AE1BD /* /Users/tas/mp2-lab2-matrix/CMakeLists.txt */,
+			);
+			name = Continuous;
+			sourceTree = "<group>";
+		};
+		77559C5FABD145DF9099BB52 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				A464A1D6F9EF4DF791D34B60 /* /Users/tas/mp2-lab2-matrix/test/test_main.cpp */,
+				B148624A66574C75A43E96ED /* /Users/tas/mp2-lab2-matrix/test/test_tmatrix.cpp */,
+				3F946AA0F20F419487E73F9C /* /Users/tas/mp2-lab2-matrix/test/test_tvector.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		77EF455C00AC4F8DAE0FD6DF /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		788C0F3D930A4B21AF1A185E /* test_matrix */ = {
+			isa = PBXGroup;
+			children = (
+				77559C5FABD145DF9099BB52 /* Source Files */,
+				0FFFB59ED5C242468C1045B9 /* /Users/tas/mp2-lab2-matrix/test/CMakeLists.txt */,
+			);
+			name = test_matrix;
+			sourceTree = "<group>";
+		};
+		7A629DAC383F47F39F3079B8 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		7D91F75D3B1C449B906C9B0C /* Nightly */ = {
+			isa = PBXGroup;
+			children = (
+				686D22345D954C0E92B5D14D /* CMake Rules */,
+				5B91F0D025E54399BF73404D /* /Users/tas/mp2-lab2-matrix/CMakeLists.txt */,
+			);
+			name = Nightly;
+			sourceTree = "<group>";
+		};
+		9DAA2D4AB1F5471EAA0F5563 /* gtest */ = {
+			isa = PBXGroup;
+			children = (
+				CBE335111BB848049258410C /* Source Files */,
+				F21066B7546249679C41700C /* /Users/tas/mp2-lab2-matrix/gtest/CMakeLists.txt */,
+			);
+			name = gtest;
+			sourceTree = "<group>";
+		};
+		A6CB93BB810C42EA98168E57 /* NightlyMemoryCheck */ = {
+			isa = PBXGroup;
+			children = (
+				334C2AF193404B0789FD379D /* CMake Rules */,
+				762C91104AA64AFA85E01344 /* /Users/tas/mp2-lab2-matrix/CMakeLists.txt */,
+			);
+			name = NightlyMemoryCheck;
+			sourceTree = "<group>";
+		};
+		A9D6C13673C8403A93A7A4AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9903D932B284711A5A99632 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		CBE335111BB848049258410C /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B3C55C368AD468B853DBD59 /* /Users/tas/mp2-lab2-matrix/gtest/gtest-all.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		FF4B744AC60946119B437CD1 = {
+			isa = PBXGroup;
+			children = (
+				3C49DC5B37044287BF51D11F /* Experimental */,
+				7D91F75D3B1C449B906C9B0C /* Nightly */,
+				6C861461D79E41199D19C2A5 /* Continuous */,
+				A6CB93BB810C42EA98168E57 /* NightlyMemoryCheck */,
+				647DEA8F25694A3EB7E8DC67 /* ALL_BUILD */,
+				26589E4DB2D7488C9494CD1F /* matrix */,
+				9DAA2D4AB1F5471EAA0F5563 /* gtest */,
+				788C0F3D930A4B21AF1A185E /* test_matrix */,
+				0579EE2ABADC4DA28A824717 /* Products */,
+				A9D6C13673C8403A93A7A4AE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5D100B575D9E42648633C25B /* test_matrix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8646E18FF7545AB9C52CBD2 /* Build configuration list for PBXNativeTarget "test_matrix" */;
+			buildPhases = (
+				5B57E5B2B33F4D6BA8ABDFEB /* Sources */,
+				EF28CCCCF4E0474887FB80CF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96074CBE326748BF81493FCD /* PBXTargetDependency */,
+				F6D5A71155AF4F36B661AF3E /* PBXTargetDependency */,
+			);
+			name = test_matrix;
+			productName = test_matrix;
+			productReference = 4E4C46EC08D341A4BC453170 /* test_matrix */;
+			productType = "com.apple.product-type.tool";
+		};
+		AEA391D5EF0F44E8BB72B7D5 /* gtest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17F6C16F514D4DC8A6A12228 /* Build configuration list for PBXNativeTarget "gtest" */;
+			buildPhases = (
+				71115BD486E04D47B7A063DB /* Sources */,
+				1197B50C10B14F43B5D4DC42 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FACACB3E2254F7FBB4F3C8C /* PBXTargetDependency */,
+			);
+			name = gtest;
+			productName = gtest;
+			productReference = A4F803CC2B24496990B7FFE6 /* gtest */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0F56B01BF79F4E6C95DCB4C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1320;
+			};
+			buildConfigurationList = 299A5A6739F540E193D30784 /* Build configuration list for PBXProject "matrix" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				303536682D16414AB341D97B /* Debug */,
+				DF943E724F7840E6885F094A /* Release */,
+				F7CE4AB8E71C47DA88FD079C /* MinSizeRel */,
+				BC1B16016B674C00A1513E62 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = FF4B744AC60946119B437CD1;
+			projectDirPath = .;
+			projectRoot = "";
+			targets = (
+				97200F2A105943C49A94E634 /* ALL_BUILD */,
+				F7E7BB6799E14883B0CD70FD /* Continuous */,
+				215990BC657F4339824DD8B9 /* Experimental */,
+				B75FF8EF60FE4FBC87043BF2 /* Nightly */,
+				50AB1BC4E5A247A9BCE24975 /* NightlyMemoryCheck */,
+				9791E9B80B7B4D568B6F2D1A /* RUN_TESTS */,
+				4000705F3BFE401AA1D5A61C /* ZERO_CHECK */,
+				AEA391D5EF0F44E8BB72B7D5 /* gtest */,
+				79B4268ADF5F4C7481CE7878 /* matrix */,
+				5D100B575D9E42648633C25B /* test_matrix */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		003C8D08B0008F35F218E126 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/tas/mp2-lab2-matrix
+  /Users/tas/Desktop/CMake.app/Contents/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/tas/mp2-lab2-matrix
+  /Users/tas/Desktop/CMake.app/Contents/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/tas/mp2-lab2-matrix
+  /Users/tas/Desktop/CMake.app/Contents/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/tas/mp2-lab2-matrix
+  /Users/tas/Desktop/CMake.app/Contents/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		01EDF9380A91983C9430F544 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+"/Users/tas/mp2-lab2-matrix/CMakeFiles/ALL_BUILD"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/tas/mp2-lab2-matrix
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/tas/mp2-lab2-matrix
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/tas/mp2-lab2-matrix
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/tas/mp2-lab2-matrix
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		09FB783FD30DC6E66DF354AF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		23E0E19C1FE635DB84934AD9 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		240841D94DE3D724270B45AA /* Generate CMakeFiles/Nightly */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/Nightly";
+			outputPaths = (
+"/Users/tas/mp2-lab2-matrix/CMakeFiles/Nightly"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/tas/mp2-lab2-matrix
+  /Users/tas/Desktop/CMake.app/Contents/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Nightly
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/tas/mp2-lab2-matrix
+  /Users/tas/Desktop/CMake.app/Contents/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Nightly
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/tas/mp2-lab2-matrix
+  /Users/tas/Desktop/CMake.app/Contents/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Nightly
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/tas/mp2-lab2-matrix
+  /Users/tas/Desktop/CMake.app/Contents/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Nightly
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		323E6CE94951678BF055CC89 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		370CA5CAF9116505B4801EE6 /* Generate CMakeFiles/Experimental */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/Experimental";
+			outputPaths = (
+"/Users/tas/mp2-lab2-matrix/CMakeFiles/Experimental"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/tas/mp2-lab2-matrix
+  /Users/tas/Desktop/CMake.app/Contents/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Experimental
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/tas/mp2-lab2-matrix
+  /Users/tas/Desktop/CMake.app/Contents/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Experimental
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/tas/mp2-lab2-matrix
+  /Users/tas/Desktop/CMake.app/Contents/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Experimental
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/tas/mp2-lab2-matrix
+  /Users/tas/Desktop/CMake.app/Contents/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Experimental
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		4C97A8A51034B6378B0F2B6A /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+"/Users/tas/mp2-lab2-matrix/CMakeFiles/ZERO_CHECK"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/tas/mp2-lab2-matrix
+  make -f /Users/tas/mp2-lab2-matrix/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/tas/mp2-lab2-matrix
+  make -f /Users/tas/mp2-lab2-matrix/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/tas/mp2-lab2-matrix
+  make -f /Users/tas/mp2-lab2-matrix/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/tas/mp2-lab2-matrix
+  make -f /Users/tas/mp2-lab2-matrix/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		64148057044CCC376F0F0B97 /* Generate CMakeFiles/Continuous */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/Continuous";
+			outputPaths = (
+"/Users/tas/mp2-lab2-matrix/CMakeFiles/Continuous"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/tas/mp2-lab2-matrix
+  /Users/tas/Desktop/CMake.app/Contents/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Continuous
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/tas/mp2-lab2-matrix
+  /Users/tas/Desktop/CMake.app/Contents/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Continuous
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/tas/mp2-lab2-matrix
+  /Users/tas/Desktop/CMake.app/Contents/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Continuous
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/tas/mp2-lab2-matrix
+  /Users/tas/Desktop/CMake.app/Contents/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Continuous
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		6B10FBD1E20A6C99B3282A2C = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		75176924E516641CAA9DAD2C /* Generate CMakeFiles/NightlyMemoryCheck */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/NightlyMemoryCheck";
+			outputPaths = (
+"/Users/tas/mp2-lab2-matrix/CMakeFiles/NightlyMemoryCheck"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/tas/mp2-lab2-matrix
+  /Users/tas/Desktop/CMake.app/Contents/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D NightlyMemoryCheck
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/tas/mp2-lab2-matrix
+  /Users/tas/Desktop/CMake.app/Contents/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D NightlyMemoryCheck
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/tas/mp2-lab2-matrix
+  /Users/tas/Desktop/CMake.app/Contents/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D NightlyMemoryCheck
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/tas/mp2-lab2-matrix
+  /Users/tas/Desktop/CMake.app/Contents/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D NightlyMemoryCheck
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		910A41151295C5F9742C25BD = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		A68D7F74133ED74D8658B427 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B57E5B2B33F4D6BA8ABDFEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74127F5A599D4F5D8464711C /* /Users/tas/mp2-lab2-matrix/test/test_main.cpp */,
+				4AB1AB102EDC41F0B9F6EE10 /* /Users/tas/mp2-lab2-matrix/test/test_tmatrix.cpp */,
+				6A86B0656963495EA170F0C6 /* /Users/tas/mp2-lab2-matrix/test/test_tvector.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71115BD486E04D47B7A063DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9361414A7A9E490A9D8CFE20 /* /Users/tas/mp2-lab2-matrix/gtest/gtest-all.cc */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0D462810748C46AFB57293EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4000705F3BFE401AA1D5A61C /* ZERO_CHECK */;
+			targetProxy = 662BF32979C7478E9A0A5D0B /* PBXContainerItemProxy */;
+		};
+		372B792F6F9D454A8F6F10D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4000705F3BFE401AA1D5A61C /* ZERO_CHECK */;
+			targetProxy = D0F1EB6B473F44FC9FF613CD /* PBXContainerItemProxy */;
+		};
+		726F274BB8704B8D9EB68C62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4000705F3BFE401AA1D5A61C /* ZERO_CHECK */;
+			targetProxy = 932253CF2CEE4158BD72A260 /* PBXContainerItemProxy */;
+		};
+		75C23940CEA049538ACF36A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4000705F3BFE401AA1D5A61C /* ZERO_CHECK */;
+			targetProxy = A67F53B9669E4D43B319312B /* PBXContainerItemProxy */;
+		};
+		8FACACB3E2254F7FBB4F3C8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4000705F3BFE401AA1D5A61C /* ZERO_CHECK */;
+			targetProxy = 1BFDAD1DAC7D4E2C93C474D9 /* PBXContainerItemProxy */;
+		};
+		911F4E39115F4E72BFACDFE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AEA391D5EF0F44E8BB72B7D5 /* gtest */;
+			targetProxy = 734D31A0F37146B8BB4E5E0B /* PBXContainerItemProxy */;
+		};
+		96074CBE326748BF81493FCD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AEA391D5EF0F44E8BB72B7D5 /* gtest */;
+			targetProxy = 2633FE7F6C4A435A93DD834A /* PBXContainerItemProxy */;
+		};
+		AF954FEDE3F2481F8A620CB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D100B575D9E42648633C25B /* test_matrix */;
+			targetProxy = C2DC3D5C695F4F109FE93FE5 /* PBXContainerItemProxy */;
+		};
+		BD0204F69065471BB4030E52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4000705F3BFE401AA1D5A61C /* ZERO_CHECK */;
+			targetProxy = A17223A1CC5D4D519CD01D0F /* PBXContainerItemProxy */;
+		};
+		E7D00266D12D4F2E8DCBFEA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4000705F3BFE401AA1D5A61C /* ZERO_CHECK */;
+			targetProxy = E2072FA165D0439F895D3717 /* PBXContainerItemProxy */;
+		};
+		F6D5A71155AF4F36B661AF3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4000705F3BFE401AA1D5A61C /* ZERO_CHECK */;
+			targetProxy = EAA45898F5F948ADAA68BFC4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04677141069E42E788600659 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk;
+				SYMROOT = "/Users/tas/mp2-lab2-matrix/build";
+			};
+			name = RelWithDebInfo;
+		};
+		059B9E53622F4F6AB33FE490 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = NightlyMemoryCheck;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/tas/mp2-lab2-matrix";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		1BDAA54A12B349A1AB74817E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/tas/mp2-lab2-matrix";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		1F11D56F3BCD4F56928659C2 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gtest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/tas/mp2-lab2-matrix/gtest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		231C5C4D546E4938832FC8C1 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Nightly;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/tas/mp2-lab2-matrix";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		2B93CAE951924BC0ADA9FCF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Nightly;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/tas/mp2-lab2-matrix";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		2BC46E2DF39A47EEB354C013 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gtest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/tas/mp2-lab2-matrix/gtest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		36F9DA322E864EFA9C8D3ED4 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Continuous;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/tas/mp2-lab2-matrix";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		3A82F79B58424628B8CDA44C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/tas/mp2-lab2-matrix/gtest","/Users/tas/mp2-lab2-matrix/include","$(inherited)");
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/tas/mp2-lab2-matrix/gtest/Release/libgtest.a","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = test_matrix;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/tas/mp2-lab2-matrix/test";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		3EEA8BED312242F2A8681036 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/tas/mp2-lab2-matrix";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		4D5A8604E0994961A34F80F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/tas/mp2-lab2-matrix";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		54EB63C7BC16412F9475DFEC /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/tas/mp2-lab2-matrix/gtest","/Users/tas/mp2-lab2-matrix/include","$(inherited)");
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/tas/mp2-lab2-matrix/gtest/RelWithDebInfo/libgtest.a","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = test_matrix;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/tas/mp2-lab2-matrix/test";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		56F467EF86FF41DB86A34076 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk;
+				SYMROOT = "/Users/tas/mp2-lab2-matrix/build";
+			};
+			name = Release;
+		};
+		5E797979DB7F4E6D810E989D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/tas/mp2-lab2-matrix";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		5FD4D229C3DD4CC3A3A5CEC8 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/tas/mp2-lab2-matrix";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		609121A9EB5A4E2699FE7FFC /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/tas/mp2-lab2-matrix";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		62E672BA3D5447BEBF09AEAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/tas/mp2-lab2-matrix";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		6615E369BEAF493FAB1F0030 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "   ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gtest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/tas/mp2-lab2-matrix/gtest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		67908DE16E2A4D509FF1D73A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = matrix;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/tas/mp2-lab2-matrix/include";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		694C1CC10AFA4B6DAD939479 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/tas/mp2-lab2-matrix";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		6E4ED94BC9AE4571B4238039 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = NightlyMemoryCheck;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/tas/mp2-lab2-matrix";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		6EBA4526403249F5A7392891 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Experimental;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/tas/mp2-lab2-matrix";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		7D07A647851843EB8999D231 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = matrix;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/tas/mp2-lab2-matrix/include";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		876C5AF337AC4A8381B50DBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/tas/mp2-lab2-matrix";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		92E728D7552545AF8764A455 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Nightly;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/tas/mp2-lab2-matrix";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		95EF40C4176D48FF91014947 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Continuous;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/tas/mp2-lab2-matrix";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		9B79B9144B1F40DB94AED52F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/tas/mp2-lab2-matrix";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		9D2B418D5EFC490085F64CBF /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk;
+				SYMROOT = "/Users/tas/mp2-lab2-matrix/build";
+			};
+			name = MinSizeRel;
+		};
+		A2B7F870B0704C3A8A282CC7 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Nightly;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/tas/mp2-lab2-matrix";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		B3EA3AF305C1405ABD1800FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Continuous;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/tas/mp2-lab2-matrix";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		B68405593FD5401780BD30D1 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Experimental;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/tas/mp2-lab2-matrix";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		B6DD0B5AA3C848E1A10BBE2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Continuous;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/tas/mp2-lab2-matrix";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		BD740BDB84F14CDBB3AB7F44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/tas/mp2-lab2-matrix/gtest","/Users/tas/mp2-lab2-matrix/include","$(inherited)");
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "   ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/tas/mp2-lab2-matrix/gtest/Debug/libgtest.a","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = test_matrix;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/tas/mp2-lab2-matrix/test";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		C35552FF98014430932554F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = NightlyMemoryCheck;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/tas/mp2-lab2-matrix";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		C72BB17A46814D75B867FE1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Experimental;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/tas/mp2-lab2-matrix";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		CF5E016A353D4B7AAE4559EF /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/tas/mp2-lab2-matrix/gtest","/Users/tas/mp2-lab2-matrix/include","$(inherited)");
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/tas/mp2-lab2-matrix/gtest/MinSizeRel/libgtest.a","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = test_matrix;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/tas/mp2-lab2-matrix/test";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		D3FF7DABE8C5478E8BA03C3C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/tas/mp2-lab2-matrix";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		D56D7645B1ED4C1CB05B72AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Experimental;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/tas/mp2-lab2-matrix";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		D6A59A336ED74A2081282DB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gtest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/tas/mp2-lab2-matrix/gtest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		E65D0BF554514E8DA156FB12 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = matrix;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/tas/mp2-lab2-matrix/include";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		ED5C055B49C44E398AF87E4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = NightlyMemoryCheck;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/tas/mp2-lab2-matrix";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		F10BA76CAF024B0A9B2C2353 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/tas/mp2-lab2-matrix";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		F311E33D055841CABF5C3A9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk;
+				SYMROOT = "/Users/tas/mp2-lab2-matrix/build";
+			};
+			name = Debug;
+		};
+		F6DDA249B9CE4DF1B5BEE1FD /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = matrix;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/tas/mp2-lab2-matrix/include";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17F6C16F514D4DC8A6A12228 /* Build configuration list for PBXNativeTarget "gtest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6615E369BEAF493FAB1F0030 /* Debug */,
+				D6A59A336ED74A2081282DB6 /* Release */,
+				2BC46E2DF39A47EEB354C013 /* MinSizeRel */,
+				1F11D56F3BCD4F56928659C2 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		299A5A6739F540E193D30784 /* Build configuration list for PBXProject "matrix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F311E33D055841CABF5C3A9C /* Debug */,
+				56F467EF86FF41DB86A34076 /* Release */,
+				9D2B418D5EFC490085F64CBF /* MinSizeRel */,
+				04677141069E42E788600659 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4E4D284C815A4A64A079550A /* Build configuration list for PBXAggregateTarget "Continuous" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6DD0B5AA3C848E1A10BBE2A /* Debug */,
+				B3EA3AF305C1405ABD1800FB /* Release */,
+				36F9DA322E864EFA9C8D3ED4 /* MinSizeRel */,
+				95EF40C4176D48FF91014947 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		543A49C3864446448577C87D /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62E672BA3D5447BEBF09AEAD /* Debug */,
+				1BDAA54A12B349A1AB74817E /* Release */,
+				D3FF7DABE8C5478E8BA03C3C /* MinSizeRel */,
+				694C1CC10AFA4B6DAD939479 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A66FEBF4901848488B711CE1 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EEA8BED312242F2A8681036 /* Debug */,
+				9B79B9144B1F40DB94AED52F /* Release */,
+				5E797979DB7F4E6D810E989D /* MinSizeRel */,
+				5FD4D229C3DD4CC3A3A5CEC8 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AE2E19879FE742E1A3787FE2 /* Build configuration list for PBXAggregateTarget "Nightly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92E728D7552545AF8764A455 /* Debug */,
+				2B93CAE951924BC0ADA9FCF1 /* Release */,
+				A2B7F870B0704C3A8A282CC7 /* MinSizeRel */,
+				231C5C4D546E4938832FC8C1 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CF6A89428EF8442F9D215B2B /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D5A8604E0994961A34F80F2 /* Debug */,
+				876C5AF337AC4A8381B50DBF /* Release */,
+				609121A9EB5A4E2699FE7FFC /* MinSizeRel */,
+				F10BA76CAF024B0A9B2C2353 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CFF678853E5B4C39B590FF67 /* Build configuration list for PBXAggregateTarget "matrix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67908DE16E2A4D509FF1D73A /* Debug */,
+				7D07A647851843EB8999D231 /* Release */,
+				E65D0BF554514E8DA156FB12 /* MinSizeRel */,
+				F6DDA249B9CE4DF1B5BEE1FD /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D8646E18FF7545AB9C52CBD2 /* Build configuration list for PBXNativeTarget "test_matrix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD740BDB84F14CDBB3AB7F44 /* Debug */,
+				3A82F79B58424628B8CDA44C /* Release */,
+				CF5E016A353D4B7AAE4559EF /* MinSizeRel */,
+				54EB63C7BC16412F9475DFEC /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DDB2FDB5D44F44F8A648B84F /* Build configuration list for PBXAggregateTarget "Experimental" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D56D7645B1ED4C1CB05B72AC /* Debug */,
+				C72BB17A46814D75B867FE1B /* Release */,
+				6EBA4526403249F5A7392891 /* MinSizeRel */,
+				B68405593FD5401780BD30D1 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FC981145E5894E639A3AF440 /* Build configuration list for PBXAggregateTarget "NightlyMemoryCheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C35552FF98014430932554F2 /* Debug */,
+				ED5C055B49C44E398AF87E4E /* Release */,
+				6E4ED94BC9AE4571B4238039 /* MinSizeRel */,
+				059B9E53622F4F6AB33FE490 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0F56B01BF79F4E6C95DCB4C3 /* Project object */;
+}
